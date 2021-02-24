@@ -9,10 +9,13 @@ body {
 menu {
     display: none;
 }
+button {
+    display: none;
+}
 header {
     display: flex;
     height: 10vh;
-    background-color: grey;
+    background-color: rgb(44, 54, 56,1);
     align-items: center;
     width: 90%;
     position:fixed;
@@ -63,6 +66,7 @@ header .logo-container {
     justify-content: center;
     align-items: center;
     background-color: rgb(81, 245, 163);
+    width: 100%;
 }
 .article-avatar {
     display: flex;
@@ -72,12 +76,11 @@ header .logo-container {
     margin-top: 12em ;
     margin-bottom: 3em;
     height: 15em;
-    background-color: #fff;
-    border-radius: 50%;
 }
 .article-p {
     font-size: 70px;
     font-weight:bold;
+
 }
 .article-divider {
     display: flex;
@@ -100,42 +103,58 @@ header .logo-container {
     justify-content: flex-start;
     border-radius: 5px;
 }
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 425px){
     header {
         display: flex;
+        width: 100%;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(45, 253, 253);
+        position:fixed;
     }
-    menu {
+    button {
         display: flex;
         order: 2;
         justify-content: flex-end;
-        padding: 8px;
-        margin-right: 8px;
-        border: 1px solid #fff;
+        padding: 10px;
+        margin-right: 10px;
+        border: 0 solid #fff;
         border-radius: 5px;
+        background: none;
+        font-size: 25px;
     }
-    menu i {
-        font-size: 30px;
-        color: #fff;
+    .links-container {
+        position: absolute;
+        top: 10vh;
+        background-color: rgb(128, 128, 128);
+        right: 0;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: height .3s linear;
     }
     .links {
-        background-color: rgba(0, 0, 0, 0.975);
-        position: absolute;
-        bottom: -400px;
-        height: 400px;
-        overflow: none;
-        width: 100%;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        height: 400px;
+    }
+    .mostrar {
+        height: 400px;
     }
     header .logo-container {
         display: flex;
         flex: 2;
-        padding: 0 0 0 8px;
+        padding: 0;
+        justify-content: center;
     }
-
     header .logo-container a {
         font-size: 30px;
     }
-}   
+    .article {
+        background-color: rgb(170, 232, 240);
+    }
+    .article-p p {
+        width: 100%;
+        font-size: 50px;
+    }
+}
