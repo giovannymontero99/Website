@@ -12,27 +12,29 @@
     <title>Start bootstrap</title>
 </head>
 <body>
-    <header class="header">
-        <button class="menu-icon" id="Btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="logo-container">
-            <a href="#">Al Tiro Comidas</a>
-        </div>
-        <div class="links-container" id="links">
-            <ul class="links">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="article">
+    <div class="flex">
+        <header class="header">
+            <button class="menu-icon" id="Btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-container">
+                <a href="#">Al Tiro Comidas</a>
+            </div>
+            <div class="links-container" id="links">
+                <ul class="links">
+                    <li><a href="#section1">Inicio</a></li>
+                    <li><a href="#section2">Menu</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <section class="article" name="section1" id="section1">
         <div class="article-avatar">
-            <img class="avatar" src="https://lh3.googleusercontent.com/proxy/HMTWrsmApQV_4J5dpJ1by-WrmHv1Qdz2njVxdqBYPiyj4ocmsbO2rtN2luoFC6zqR1YGDD_uizZzkEnyLp8mChuxQLC5KZQ6WnQ-PD1_-XXKvg" alt="Avatar Bootstrap">
+            <img class="avatar" src="img/burguer.webp" alt="Avatar Bootstrap">
         </div>
         <div class="article-p">
-            <p>bienvenidos</p>
+            <p>Bienvenidos</p>
         </div>
         <div class="article-divider">
             <div class="divier-custom"></div>
@@ -42,7 +44,34 @@
         <div class="article-h1">
             <h1>comidas rapidas a tu casa en maxino 30 minutos</h1> 
         </div>
+    </section >
+    <section class="section2" name="section2" id="section2">
+        <div class="plate1">
+            <a href="#">Salchipapas</a>
+            <img src="https://elcomercio.pe/resizer/mN9krrwyAyRZzdr2dCWzBa13ZBw=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/QZ4GQTF7ENHNXGXMYD334ZW7SY.jpg" alt="Salchipapas">
+            <p>$5.000</p>
+        </div>
+        <div class="plate1">
+            <a href="#">hamburgesa</a>
+            <img src="https://elcomercio.pe/resizer/mN9krrwyAyRZzdr2dCWzBa13ZBw=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/QZ4GQTF7ENHNXGXMYD334ZW7SY.jpg" alt="Salchipapas">
+            <p>$5.000</p>
+        </div>
+        <div class="plate1">
+            <a href="#">perros</a>
+            <img src="https://elcomercio.pe/resizer/mN9krrwyAyRZzdr2dCWzBa13ZBw=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/QZ4GQTF7ENHNXGXMYD334ZW7SY.jpg" alt="Salchipapas">
+            <p>$5.000</p>
+        </div>
+        <div class="plate1">
+            <a href="#">mazorcada</a>
+            <img src="https://elcomercio.pe/resizer/mN9krrwyAyRZzdr2dCWzBa13ZBw=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/QZ4GQTF7ENHNXGXMYD334ZW7SY.jpg" alt="Salchipapas">
+            <p>$5.000</p>
+        </div>
     </section>
+    <footer>
+        <a href="https://api.whatsapp.com/send?phone=3134973973" target="_blank">Whatsapp</a>
+        <p>direccion: calle 72a #78-39, Bogotá D.C., Colombia</p>
+        <P>Correo: 7301586@gmail.com</P>
+    </footer>
     <script src="js/boton.js"></script>
 </body>
 </html>
